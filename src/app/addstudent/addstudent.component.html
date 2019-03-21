@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+<div class="ui input">
+  <input type="text"  placeholder="Enter Roll number"  [(ngModel)]="student.rollno">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter DOB" [(ngModel)]="student.dob">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter FirstName" [(ngModel)]="student.firstname">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter LastName" [(ngModel)]="student.lastname">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter parent Name" [(ngModel)]="student.parentname">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter Parentphonenumber" [(ngModel)]="student.parentphone">
+</div><hr>
+<div class="ui input">
+  <input type="text" placeholder="Enter Address" [(ngModel)]="student.address">
+</div><hr>
+<button class="ui brown button" (click)="addStudent(student)" >
+  Add Student 
+</button>
