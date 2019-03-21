@@ -23,7 +23,7 @@ export class StudentService {
   } 
   
   addStudent(student){
-    
+    student.rollno=Math.round(Math.random()*10000);
     this.students.push(student);
      localStorage.setItem('students',JSON.stringify(this.students));
    }

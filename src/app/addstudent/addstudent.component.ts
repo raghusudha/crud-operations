@@ -19,4 +19,11 @@ export class AddstudentComponent implements OnInit {
     this.router.navigate(['./student/' ]);
 
 }
+updateStudent(student){
+  this.studentService.updateStudent(student);
+  this.router.navigate(['./student/']);
+  
+
+
+}
 }
